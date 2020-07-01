@@ -1,0 +1,38 @@
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+#img-div{
+  padding:10px;
+  background:white;
+}
+#img-caption{
+  text-align:center;
+}
+#main{
+  background:#eee;
+  border-radius:10px;
+  
+}
+#title{
+  text-align:center;
+  padding:30px;
+}
+#info{
+  text-align:center;
+  margin:30px;
+}
+li {
+  margin: 16px 0;
+}
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+footer{
+  text-align:center
+}

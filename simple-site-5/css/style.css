@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+/*--------header--------*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1438px; }
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 10px; }
+    .container__header .logo__text {
+      color: #44c0c2;
+      font-family: "Lobster";
+      padding: 20px 0 15px 15px;
+      font-size: 43px; }
+    .container__header .navigation__list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none; }
+      .container__header .navigation__list-item {
+        padding-top: 39px; }
+      .container__header .navigation__list-link {
+        font-size: 16px;
+        font-family: "Open Sans", "Lato", "Maven Pro";
+        padding: 40px  27px 36px 25px;
+        color: #5a5d65;
+        text-decoration: none; }
+        .container__header .navigation__list-link:hover {
+          background: #f8f9fb;
+          border-bottom: solid 3px #49cbcd;
+          color: #49cbcd; }
+      .container__header .navigation__list-link_last-item {
+        padding-right: 14px; }
+
+.greeting {
+  background: url("https://i.ibb.co/wdyh1fY/greeting.png") no-repeat 100% 18%;
+  height: 566px; }
+  .greeting__bg-color {
+    background-color: #44c0c280; }
+  .greeting__position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #ffffff; }
+    .greeting__position .greeting__left-slide {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      color: #49cbcd;
+      margin: 36px 0 0 28px; }
+      .greeting__position .greeting__left-slide .arrow-left {
+        margin: 12px 0 0 16px; }
+    .greeting__position .greeting__right-slide {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      color: #49cbcd;
+      margin: 36px 28px 0 0; }
+      .greeting__position .greeting__right-slide .arrow-right {
+        margin: 12px 0 0 20px; }
+    .greeting__position .greeting__main-text {
+      text-align: center;
+      margin-bottom: 22px; }
+      .greeting__position .greeting__main-text .greeting__heading {
+        font-family: "Open Sans Semibold", "Lato", "Maven Pro";
+        font-size: 63px;
+        letter-spacing: 3px;
+        word-spacing: 3px;
+        padding: 0 0 0 36px; }
+      .greeting__position .greeting__main-text .greeting__main-text__simple-text {
+        font-family: "Open Sans", "Lato", "Maven Pro";
+        font-size: 23px;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 27px;
+        padding-bottom: 55px;
+        line-height: 1.5; }
+      .greeting__position .greeting__main-text .greeting__button {
+        font-family: "Open Sans Semibold", "Lato", "Maven Pro";
+        font-size: 26px;
+        border-radius: 10px;
+        padding: 17px 35px 17px 41px;
+        border: solid 2px #ffffff;
+        letter-spacing: 2px;
+        background: none;
+        color: #ffffff; }
+
+.services {
+  max-width: 1200px;
+  margin: 104px auto 98px;
+  display: flex;
+  justify-content: space-around; }
+  .services__item {
+    max-width: 252px;
+    width: 100%; }
+    .services__item__logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 41px auto;
+      border: solid 3px #49cbcd; }
+      .services__item__logo .icons {
+        color: #49cbcd;
+        padding: 31px 0 0 32px;
+        font-size: 38px; }
+    .services__item__head-text {
+      text-align: center;
+      font-size: 21px;
+      color: #4e525d;
+      font-family: "Open Sans", "Lato", "Maven Pro"; }
+    .services__item__text {
+      text-align: center;
+      font-family: "Open Sans", "Lato", "Maven Pro";
+      font-size: 14px;
+      padding-top: 16px;
+      line-height: 26px; }
+    .services__item__button {
+      max-width: 100px;
+      width: 100%;
+      margin: 17px auto 0; }
+      .services__item__button .more-inform {
+        padding: 4px 11px 5px 13px;
+        background: #49cbcd;
+        color: #ffffff;
+        font-family: "Open Sans", "Lato", "Maven Pro";
+        border: solid 1px #49cbcd;
+        font-size: 14px;
+        border-radius: 5px; }
+
+.gallery {
+  background-color: #f1f1f1; }
+  .gallery__head {
+    text-align: center;
+    font-size: 42px;
+    font-family: "Open Sans", "Lato", "Maven Pro";
+    color: #4e525d;
+    padding-top: 38px;
+    padding-left: 7px;
+    padding-bottom: 52px;
+    font-weight: 400; }
+  .gallery__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1172px;
+    padding-bottom: 24px; }
+    .gallery__box-img {
+      width: 371px;
+      height: 315px;
+      border-radius: 5px; }
+  .gallery__button {
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 102px; }
+    .gallery__button-gallery {
+      background-color: #49cbcd;
+      font-family: "Open Sans Semibold", "Lato", "Maven Pro";
+      font-size: 24px;
+      color: #ffffff;
+      border: solid 1px #49cbcd;
+      border-radius: 5px;
+      padding: 16px 40px;
+      letter-spacing: 1px; }
+
+.team-work {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 24px; }
+  .team-work__title {
+    text-align: center;
+    font-family: "Open Sans", "Lato", "Maven Pro";
+    font-size: 42px;
+    color: #4e525d;
+    margin-top: 81px;
+    padding-left: 26px; }
+  .team-work__box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 127px;
+    margin-bottom: 78px; }
+    .team-work__box .team-work__item {
+      text-align: center;
+      max-width: 252px;
+      width: 100%; }
+      .team-work__box .team-work__item__logo {
+        width: 202px;
+        height: 202px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-color: #f1f1f1; }
+      .team-work__box .team-work__item__title-text, .team-work__box .team-work__item__subtitle-text, .team-work__box .team-work__item__main-text {
+        font-family: "Open Sans", "Lato", "Maven Pro"; }
+      .team-work__box .team-work__item__title-text {
+        margin-top: 65px;
+        font-size: 21px; }
+      .team-work__box .team-work__item__subtitle-text {
+        font-size: 14px;
+        margin-left: 2px;
+        margin-top: 3px;
+        margin-bottom: 24px; }
+      .team-work__box .team-work__item__main-text {
+        font-size: 14px;
+        line-height: 26px; }
+
+.prize-bg {
+  background-color: #f1f1f1; }
+
+.prize__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; }
+  .prize__container .prize__box {
+    max-width: 371px;
+    width: 100%; }
+    .prize__container .prize__box__list {
+      text-align: center;
+      list-style: none; }
+      .prize__container .prize__box__list .list-title {
+        font-family: "Open Sans", "Lato", "Maven Pro";
+        background: #485460;
+        color: #ffffff;
+        font-size: 27px;
+        padding: 18px 0 20px 0; }
+      .prize__container .prize__box__list .list-cost {
+        font-family: "Open Sans", "Lato", "Maven Pro";
+        background: #f8f9fb;
+        font-size: 21px;
+        padding: 21px 0;
+        border-bottom: 1px solid #808080; }
+      .prize__container .prize__box__list .list-simple-item {
+        font-family: "Open Sans", "Lato", "Maven Pro";
+        background: #ffffff;
+        font-size: 14px;
+        padding: 13px 11px 12px 0;
+        border-bottom: 1px solid gray; }
+      .prize__container .prize__box__list .list-button {
+        background: #f8f9fb;
+        padding: 33px 0; }
+      .prize__container .prize__box__list .button-buy-plan {
+        padding: 6px 50px 10px;
+        color: #ffffff;
+        font-family: "Open Sans", "Lato", "Maven Pro";
+        font-size: 17px;
+        background: #485460;
+        border: none; }
+      .prize__container .prize__box__list .button-buy-plan_medium-color, .prize__container .prize__box__list .list-title_medium-color {
+        background-color: #49cbcd; }
+
+.prize__container-position {
+  padding: 119px 0 98px 0; }
+
+.client-reviews__box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center; }
+  .client-reviews__box .review {
+    max-width: 642px;
+    text-align: center;
+    font-family: "Open Sans", "Lato", "Maven Pro";
+    padding: 137px 0 103px; }
+    .client-reviews__box .review__title {
+      padding-bottom: 33px;
+      font-size: 38px;
+      padding-right: 15px;
+      word-spacing: 7px; }
+    .client-reviews__box .review__text {
+      font-size: 17px;
+      word-spacing: 4px;
+      line-height: 29px;
+      width: 642px; }
+    .client-reviews__box .review__client-name {
+      padding-top: 30px;
+      font-size: 21px; }
+  .client-reviews__box .client-reviews__left-slide {
+    margin-top: 18px;
+    margin-left: 32px; }
+  .client-reviews__box .client-reviews__right-slide {
+    margin-top: 18px;
+    margin-right: 32px; }
+
+.contact {
+  width: 100%;
+  margin: 0 auto; }
+
+.contact-img {
+  background: url("https://i.ibb.co/g6Pcck9/contact.png") no-repeat 100% 100%;
+  height: 691px; }
+  .contact-img .contact__color-bg {
+    background-color: #00000033; }
+    .contact-img .contact__color-bg .contact__title {
+      text-align: center;
+      color: #ffffff;
+      padding: 92px 0 103px 10px;
+      font-size: 40px;
+      font-family: "Open Sans", "Lato", "Maven Pro"; }
+    .contact-img .contact__color-bg .contact__box {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 102px;
+      max-width: 1200px;
+      font-family: "Open Sans", "Lato", "Maven Pro"; }
+      .contact-img .contact__color-bg .contact__box__text-info {
+        max-width: 475px;
+        width: 100%; }
+        .contact-img .contact__color-bg .contact__box__text-info .text-info__title {
+          padding-left: 18px;
+          font-size: 23px;
+          color: #ffffff; }
+        .contact-img .contact__color-bg .contact__box__text-info .text-info__text {
+          padding: 6px 0 0 17px;
+          font-size: 14px;
+          color: #ffffff; }
+        .contact-img .contact__color-bg .contact__box__text-info .social-media {
+          padding: 36px 0 0 10px; }
+          .contact-img .contact__color-bg .contact__box__text-info .social-media .fa {
+            padding: 10px;
+            font-size: 19px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 11px 2px 2px;
+            border-radius: 50%; }
+            .contact-img .contact__color-bg .contact__box__text-info .social-media .fa:hover {
+              opacity: 0.7; }
+          .contact-img .contact__color-bg .contact__box__text-info .social-media .fa-facebook {
+            background: #3b5998;
+            color: #ffffff; }
+          .contact-img .contact__color-bg .contact__box__text-info .social-media .fa-twitter {
+            background: #55acee;
+            color: #ffffff; }
+          .contact-img .contact__color-bg .contact__box__text-info .social-media .fa-google {
+            background: #dd4b39;
+            color: #ffffff; }
+        .contact-img .contact__color-bg .contact__box__text-info .contact-information {
+          padding: 13px 0 0 20px;
+          font-size: 14px;
+          line-height: 25px;
+          color: #a897c6; }
+      .contact-img .contact__color-bg .contact__box .contact__box__form {
+        max-width: 585px;
+        width: 100%; }
+        .contact-img .contact__color-bg .contact__box .contact__box__form .input-box {
+          padding: 15px 54px 12px 20px;
+          font-size: 15px;
+          margin-right: 25px; }
+        .contact-img .contact__color-bg .contact__box .contact__box__form .input-box_email {
+          margin: 0; }
+        .contact-img .contact__color-bg .contact__box .contact__box__form .textarea-box {
+          margin-top: 30px;
+          font-size: 18px;
+          padding: 16px 2px 7px 18px; }
+        .contact-img .contact__color-bg .contact__box .contact__box__form .button-submit {
+          margin-left: 397px;
+          margin-top: 27px;
+          padding: 11px 69px 15px 54px;
+          font-size: 21px;
+          background-color: #49cbcd;
+          border: 0;
+          color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
