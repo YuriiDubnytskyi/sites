@@ -207,7 +207,10 @@ greetMe("World");
 				context) within which x is declared, not the block, which in this case
 				is an if statement.
 			</p>
-			<code>if (true) { var x = 5; } console.log(x); // 5</code>
+			<code>if (true) { 
+	var x = 5; 
+} 
+console.log(x); // 5</code>
 			<p>
 				This behavior changes, when using the let declaration introduced in
 				ECMAScript 2015.
@@ -221,7 +224,8 @@ greetMe("World");
 	let y = 5; 
 } 
 console.log(y); 
-// ReferenceError: y is not defined
+// ReferenceError: 
+y is not defined
 	</code>
 		</article>
 	</section>
@@ -274,7 +278,8 @@ console.log(y);
 			<code
 		>// THIS WILL CAUSE AN ERROR 
 function f() {}; const f = 5; 
-// THIS WILL CAUSE AN ERROR ALSO 
+//THIS WILL CAUSE 
+//AN ERROR ALSO 
 function f() { 
 	const g = 5; 
 	var g; //statements
@@ -282,7 +287,9 @@ function f() {
 			However, object attributes are not protected, so the following statement
 			is executed without problems.
 			<code
-		>const MY_OBJECT = {"key": "value"}; 
+		>const MY_OBJECT = {
+	"key": "value"
+}; 
 MY_OBJECT.key = "otherValue";</code>
 		</article>
 	</section>
@@ -356,7 +363,7 @@ MY_OBJECT.key = "otherValue";</code>
 			them within a block statement ({ ... }) . In general, it's good practice
 			to always use block statements, especially when nesting if statements:
 
-			<code 
+			<code class="mobile-small"
         >if (condition) { 
  statement_1_runs_if_condition_is_true;
  statement_2_runs_if_condition_is_true; 
@@ -367,11 +374,15 @@ MY_OBJECT.key = "otherValue";</code>
 			It is advisable to not use simple assignments in a conditional expression,
 			because the assignment can be confused with equality when glancing over
 			the code. For example, do not use the following code:
-			<code >if (x = y) { /* statements here */ }</code> If you need to use an
+			<code >if (x = y) {
+	/* statements here */ 
+}</code> If you need to use an
 			assignment in a conditional expression, a common practice is to put
 			additional parentheses around the assignment. For example:
 
-			<code>if ((x = y)) { /* statements here */ }</code>
+			<code>if ((x = y)) { 
+	/* statements here */ 
+}</code>
 		</article>
 	</section>
 	<section class="main-section" id="while_statement">
@@ -400,8 +411,7 @@ MY_OBJECT.key = "otherValue";</code>
 
 			<p>The following while loop iterates as long as n is less than three:</p>
 
-			<code>
-var n = 0; 
+			<code>var n = 0; 
 var x = 0; 
 while (n &lt; 3) {
 	n++; x += n; 
@@ -444,7 +454,7 @@ while (n &lt; 3) {
 			</p>
 
 			<code >function square(number) { 
-	return number * number; 
+  return number * number; 
 }</code>
 			<p>
 				The function square takes one argument, called number. The function

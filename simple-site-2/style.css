@@ -33,8 +33,14 @@ section{
     margin: 30px;
     border: 0px solid;
 }
+#submit:hover{
+    background-color: #a9d7d1;
+}
 
 @media only screen and (max-width: 515px) {
+    #name,#email,#number,#dropdown,#comments{
+        width: 80%;
+    }
     #survey-form{
         width: 90%;
     }
