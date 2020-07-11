@@ -98,11 +98,17 @@ code {
   body{
     width: 100%;
     overflow-x: hidden;
+    margin: 0;
   }
   #navbar ul {
     height:0px;
   }
-
+  .mobile-small{
+    font-size: 10px;
+  }
+  header{
+    text-align: left;
+  }
   #navbar {
     background-color: white;
     position: fixed;
