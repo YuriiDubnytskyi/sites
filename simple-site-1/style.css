@@ -85,44 +85,103 @@ code {
   border-radius: 5px;
 }
 
+.nav > .nav-btn {
+  display: none;
+}
+.nav > #nav-check {
+  display: none;
+}
+
+
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
+  body{
+    width: 100%;
+    overflow-x: hidden;
+  }
   #navbar ul {
-    border: 1px solid;
-    height: 207px;
+    height:0px;
   }
 
   #navbar {
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     padding: 0;
     margin: 0;
     width: 100%;
-    max-height: 275px;
+    max-height: 60px;
     border: none;
     z-index: 1;
     border-bottom: 2px solid;
   }
-
+  code{
+    font-size:14px;
+  }
   #main-doc {
     position: relative;
     margin-left: 0px;
-    margin-top: 270px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #main-doc {
-    margin-left: -10px;
+    padding-top: 60px;
+    width: 90%;
   }
 
-  code {
-    margin-left: -20px;
+
+
+  .main-section{
+    padding: 60px 0 0 0;
+  }
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  #navbar a {
+    color: #fff;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #000;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
     width: 100%;
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 45px;
-    min-width: 233px;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 43px;
+    color:#fff;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .desctop{
+    display: none;
+  }
+  .mobile{
+    display: block;
   }
 }

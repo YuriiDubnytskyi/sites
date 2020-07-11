@@ -1,12 +1,12 @@
 body{
-  background:#a9d7d1;
+    background:#a9d7d1;
 }
 #title,#description{
-  text-align:center;
+    text-align:center;
 }
 section{
-  background:white;
-  border-radius:10px;
+    background:white;
+    border-radius:10px;
 }
 .input-field,.dropdown {
     height: 20px;
@@ -17,11 +17,11 @@ section{
     border-radius: 2px;
 }
 .dropdown{
-  height:30px;
+    height:30px;
 }
 #survey-form{
-  width:30%;
-  margin:0 auto;
+    width:30%;
+    margin:0 auto;
 }
 #submit {
     background-color: #59ace0;
@@ -32,4 +32,10 @@ section{
     width: 96px;
     margin: 30px;
     border: 0px solid;
+}
+
+@media only screen and (max-width: 515px) {
+    #survey-form{
+        width: 90%;
+    }
 }
