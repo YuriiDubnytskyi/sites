@@ -1,0 +1,7 @@
+@media only screen and (max-width: 815px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+}
