@@ -5,7 +5,7 @@ $map-colors: (
 	colorWhite:(white),
 	colorText:(#a0a0a0)
 );
-$backgroundImage : url(../img/m-h-day.jpg);
+$backgroundImage :  url(https://i.ibb.co/gZvL6MN/m-h-day.jpg);
 $gradient:linear-gradient(45deg, #679708, #2E5CD7);
 $fontMain:'Source Sans Pro', sans-serif;
 $logoColor:map_get($map-colors,colorWhite);

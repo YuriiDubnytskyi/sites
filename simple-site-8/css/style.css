@@ -182,3 +182,42 @@
   		display: flex;
 	}
 }
+@media only screen and (max-width: 815px) {
+	section:first-of-type > div:first-child {
+		flex-direction: column;
+	}
+	.tm-team-img{
+		margin: 0 auto;
+	}
+	.tm-team-img img{
+		width: 300px;
+		height: auto;
+		
+	}
+	h2.tm-section-title {
+		font-size: 25px;
+	}
+	.box-work-title{
+		font-size: 23px;
+	}
+	.box-work-text{
+		font-size: 19px;
+	}
+	section:first-of-type > div:first-child > div:first-child {
+		padding-top: 20px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.box-work-title{
+		font-size: 19px;
+	}
+	h2.tm-section-title {
+		font-size: 22px;
+	}
+	.box-work-text{
+		font-size: 14px;
+	}
+	.tm-nav-item-link {
+		font-size: 15px;
+	}
+}
